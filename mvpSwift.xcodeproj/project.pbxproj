@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E178C821CE5AB7F00E5C240 /* ARCHITEC_ARQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCHITEC_ARQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E178C821CE5AB7F00E5C240 /* mvpSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mvpSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E178C851CE5AB7F00E5C240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E178C871CE5AB7F00E5C240 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8E178C8A1CE5AB7F00E5C240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		8E178C791CE5AB7E00E5C240 = {
 			isa = PBXGroup;
 			children = (
-				8E178C841CE5AB7F00E5C240 /* ARCHITEC_ARQ */,
+				8E178C841CE5AB7F00E5C240 /* MVPSwift */,
 				8E178C831CE5AB7F00E5C240 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +58,12 @@
 		8E178C831CE5AB7F00E5C240 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E178C821CE5AB7F00E5C240 /* ARCHITEC_ARQ.app */,
+				8E178C821CE5AB7F00E5C240 /* mvpSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8E178C841CE5AB7F00E5C240 /* ARCHITEC_ARQ */ = {
+		8E178C841CE5AB7F00E5C240 /* MVPSwift */ = {
 			isa = PBXGroup;
 			children = (
 				8E178C991CE5ABA200E5C240 /* Repository */,
@@ -75,7 +75,7 @@
 				8E178C8E1CE5AB7F00E5C240 /* LaunchScreen.storyboard */,
 				8E178C911CE5AB7F00E5C240 /* Info.plist */,
 			);
-			path = ARCHITEC_ARQ;
+			path = MVPSwift;
 			sourceTree = "<group>";
 		};
 		8E178C971CE5AB8E00E5C240 /* View */ = {
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E178C811CE5AB7F00E5C240 /* ARCHITEC_ARQ */ = {
+		8E178C811CE5AB7F00E5C240 /* mvpSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E178C941CE5AB7F00E5C240 /* Build configuration list for PBXNativeTarget "ARCHITEC_ARQ" */;
+			buildConfigurationList = 8E178C941CE5AB7F00E5C240 /* Build configuration list for PBXNativeTarget "mvpSwift" */;
 			buildPhases = (
 				8E178C7E1CE5AB7F00E5C240 /* Sources */,
 				8E178C7F1CE5AB7F00E5C240 /* Frameworks */,
@@ -145,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = ARCHITEC_ARQ;
+			name = mvpSwift;
 			productName = ARCHITEC_ARQ;
-			productReference = 8E178C821CE5AB7F00E5C240 /* ARCHITEC_ARQ.app */;
+			productReference = 8E178C821CE5AB7F00E5C240 /* mvpSwift.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8E178C7D1CE5AB7E00E5C240 /* Build configuration list for PBXProject "ARCHITEC_ARQ" */;
+			buildConfigurationList = 8E178C7D1CE5AB7E00E5C240 /* Build configuration list for PBXProject "mvpSwift" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E178C811CE5AB7F00E5C240 /* ARCHITEC_ARQ */,
+				8E178C811CE5AB7F00E5C240 /* mvpSwift */,
 			);
 		};
 /* End PBXProject section */
@@ -321,10 +321,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ARCHITEC_ARQ/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVPSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kibo.ARCHITEC-ARQ";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kibo.mvpSwift;
+				PRODUCT_NAME = mvpSwift;
 			};
 			name = Debug;
 		};
@@ -332,17 +332,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ARCHITEC_ARQ/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVPSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kibo.ARCHITEC-ARQ";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kibo.mvpSwift;
+				PRODUCT_NAME = mvpSwift;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E178C7D1CE5AB7E00E5C240 /* Build configuration list for PBXProject "ARCHITEC_ARQ" */ = {
+		8E178C7D1CE5AB7E00E5C240 /* Build configuration list for PBXProject "mvpSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E178C921CE5AB7F00E5C240 /* Debug */,
@@ -351,7 +351,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E178C941CE5AB7F00E5C240 /* Build configuration list for PBXNativeTarget "ARCHITEC_ARQ" */ = {
+		8E178C941CE5AB7F00E5C240 /* Build configuration list for PBXNativeTarget "mvpSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E178C951CE5AB7F00E5C240 /* Debug */,
