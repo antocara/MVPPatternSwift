@@ -8,7 +8,7 @@
         <!--Login Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="ARCHITEC_ARQ" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginController" customModule="mvpSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -67,11 +67,24 @@
                                 <color key="textColor" red="1" green="0.1843137255" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akJ-bb-AFn">
+                                <rect key="frame" x="271" y="437" width="57" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pqC-cZ-5kQ"/>
+                                    <constraint firstAttribute="width" constant="57" id="tja-LX-w0U"/>
+                                </constraints>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <action selector="actionButtonRegister:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tc2-a0-GuM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5EJ-Fm-qHe" firstAttribute="top" secondItem="obg-y4-Ci0" secondAttribute="bottom" constant="36" id="0IV-Wv-ZxW"/>
                             <constraint firstItem="obg-y4-Ci0" firstAttribute="top" secondItem="NQw-Cm-9wW" secondAttribute="bottom" constant="18" id="0Ny-BI-qAC"/>
+                            <constraint firstItem="akJ-bb-AFn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4bN-PQ-cbR"/>
+                            <constraint firstItem="akJ-bb-AFn" firstAttribute="top" secondItem="5EJ-Fm-qHe" secondAttribute="bottom" constant="8" id="H6D-yE-BdU"/>
                             <constraint firstItem="NQw-Cm-9wW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="48" id="H8w-QY-Cu6"/>
                             <constraint firstAttribute="trailing" secondItem="Dl5-nv-Id3" secondAttribute="trailing" constant="49" id="Jtm-fG-ZXZ"/>
                             <constraint firstItem="cbO-Ky-C4m" firstAttribute="top" secondItem="obg-y4-Ci0" secondAttribute="bottom" constant="40" id="OO1-oV-hkV"/>

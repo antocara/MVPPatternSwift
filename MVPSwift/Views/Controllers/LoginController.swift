@@ -22,7 +22,14 @@ class LoginController: UIViewController {
             LoginPresenter(nameView: self).actionInitLogin(User(name: name, password: pass))
         }
     }
-    
+
+
+    @IBAction func actionButtonRegister(sender: AnyObject) {
+        if let name = self.editName.text, let pass = self.editPass.text{
+            //FIXME: add call LoginPresenter
+        }
+    }
+
 }
 
 
