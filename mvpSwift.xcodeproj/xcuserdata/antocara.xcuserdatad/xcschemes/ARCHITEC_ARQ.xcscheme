@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8E178C811CE5AB7F00E5C240"
-               BuildableName = "ARCHITEC_ARQ.app"
-               BlueprintName = "ARCHITEC_ARQ"
-               ReferencedContainer = "container:ARCHITEC_ARQ.xcodeproj">
+               BuildableName = "mvpSwift.app"
+               BlueprintName = "mvpSwift"
+               ReferencedContainer = "container:mvpSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8E178C811CE5AB7F00E5C240"
-            BuildableName = "ARCHITEC_ARQ.app"
-            BlueprintName = "ARCHITEC_ARQ"
-            ReferencedContainer = "container:ARCHITEC_ARQ.xcodeproj">
+            BuildableName = "mvpSwift.app"
+            BlueprintName = "mvpSwift"
+            ReferencedContainer = "container:mvpSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8E178C811CE5AB7F00E5C240"
-            BuildableName = "ARCHITEC_ARQ.app"
-            BlueprintName = "ARCHITEC_ARQ"
-            ReferencedContainer = "container:ARCHITEC_ARQ.xcodeproj">
+            BuildableName = "mvpSwift.app"
+            BlueprintName = "mvpSwift"
+            ReferencedContainer = "container:mvpSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8E178C811CE5AB7F00E5C240"
-            BuildableName = "ARCHITEC_ARQ.app"
-            BlueprintName = "ARCHITEC_ARQ"
-            ReferencedContainer = "container:ARCHITEC_ARQ.xcodeproj">
+            BuildableName = "mvpSwift.app"
+            BlueprintName = "mvpSwift"
+            ReferencedContainer = "container:mvpSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
