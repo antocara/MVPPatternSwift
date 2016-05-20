@@ -85,6 +85,7 @@
 				8EEAFD441CEF414100B42848 /* presenters */,
 			);
 			name = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		8E178C981CE5AB9400E5C240 /* Domain */ = {
@@ -93,7 +94,7 @@
 				8EEAFD491CEF429700B42848 /* LoginUseCase.swift */,
 				8EEAFD4D1CEF435900B42848 /* CallbackLogin.swift */,
 			);
-			name = Domain;
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		8E178C991CE5ABA200E5C240 /* Repository */ = {
@@ -102,7 +103,7 @@
 				8EEAFD521CEF5A6200B42848 /* Models */,
 				8EEAFD4B1CEF430600B42848 /* DataRepository.swift */,
 			);
-			name = Repository;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		8EEAFD441CEF414100B42848 /* presenters */ = {
@@ -111,6 +112,7 @@
 				8EEAFD451CEF415500B42848 /* LoginPresenter.swift */,
 			);
 			name = presenters;
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 		8EEAFD511CEF5A4000B42848 /* controllers */ = {
@@ -120,6 +122,7 @@
 				8EEAFD471CEF419A00B42848 /* LoginView.swift */,
 			);
 			name = controllers;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		8EEAFD521CEF5A6200B42848 /* Models */ = {
@@ -127,7 +130,7 @@
 			children = (
 				8EEAFD4F1CEF590B00B42848 /* User.swift */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
