@@ -26,7 +26,7 @@ class LoginController: UIViewController {
 
     @IBAction func actionButtonRegister(sender: AnyObject) {
         if let name = self.editName.text, let pass = self.editPass.text{
-            
+            //FIXME: add call LoginPresenter
         }
     }
 
