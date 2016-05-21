@@ -47,4 +47,6 @@ class DataRepository: NSObject {
         return self.name == user.name && self.password == user.password;
     }
 
+
+
 }
