@@ -19,6 +19,8 @@
 		8EEAFD4C1CEF430600B42848 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEAFD4B1CEF430600B42848 /* DataRepository.swift */; };
 		8EEAFD4E1CEF435900B42848 /* CallbackLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEAFD4D1CEF435900B42848 /* CallbackLogin.swift */; };
 		8EEAFD501CEF590B00B42848 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEAFD4F1CEF590B00B42848 /* User.swift */; };
+		8EEC7DD41CEFA75200CF5FDC /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DD31CEFA75200CF5FDC /* RestManager.swift */; };
+		8EEC7DD61CEFA7D000CF5FDC /* RestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DD51CEFA7D000CF5FDC /* RestConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		8EEAFD4B1CEF430600B42848 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		8EEAFD4D1CEF435900B42848 /* CallbackLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallbackLogin.swift; sourceTree = "<group>"; };
 		8EEAFD4F1CEF590B00B42848 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8EEC7DD31CEFA75200CF5FDC /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		8EEC7DD51CEFA7D000CF5FDC /* RestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		8E178C991CE5ABA200E5C240 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				8EEC7DD21CEFA72F00CF5FDC /* Net */,
 				8EEAFD521CEF5A6200B42848 /* Models */,
 				8EEAFD4B1CEF430600B42848 /* DataRepository.swift */,
 			);
@@ -155,6 +160,15 @@
 				8EEAFD4F1CEF590B00B42848 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8EEC7DD21CEFA72F00CF5FDC /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				8EEC7DD31CEFA75200CF5FDC /* RestManager.swift */,
+				8EEC7DD51CEFA7D000CF5FDC /* RestConfig.swift */,
+			);
+			name = Net;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,10 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EEC7DD41CEFA75200CF5FDC /* RestManager.swift in Sources */,
 				8E178C881CE5AB7F00E5C240 /* LoginController.swift in Sources */,
 				8EEAFD4A1CEF429700B42848 /* LoginUseCase.swift in Sources */,
 				8EEAFD481CEF419A00B42848 /* LoginView.swift in Sources */,
 				8E178C861CE5AB7F00E5C240 /* AppDelegate.swift in Sources */,
+				8EEC7DD61CEFA7D000CF5FDC /* RestConfig.swift in Sources */,
 				8EEAFD501CEF590B00B42848 /* User.swift in Sources */,
 				8EEAFD4E1CEF435900B42848 /* CallbackLogin.swift in Sources */,
 				8EEAFD461CEF415500B42848 /* LoginPresenter.swift in Sources */,
