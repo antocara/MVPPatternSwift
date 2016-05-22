@@ -18,16 +18,12 @@ class LoginController: UIViewController {
 
 
     @IBAction func actionButtonLogin(sender: AnyObject) {
-        if let name = self.editName.text, let pass = self.editPass.text{
-            LoginPresenter(nameView: self).actionInitLogin(User(email: name, password: pass))
-        }
+        LoginPresenter(nameView: self).actionInitLogin(self.getUserFromForm())
     }
 
 
     @IBAction func actionButtonRegister(sender: AnyObject) {
-        if let name = self.editName.text, let pass = self.editPass.text{
-            //FIXME: add call LoginPresenter
-        }
+        LoginPresenter(nameView: self).actionInitRegister(self.getUserFromForm())
     }
 
 }
@@ -64,6 +60,17 @@ extension LoginController: LoginView{
         let alertView = UIAlertController(title: "Congratulations", message: "Your credentials are corrects", preferredStyle: .Alert)
         alertView.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
         presentViewController(alertView, animated: true, completion: nil)
+    }
+
+    func getUserFromForm() -> User{
+        let user = User()
+
+        if let email = self.editName.text, let pass = self.editPass.text{
+            user.email = email
+            user.password = pass
+        }
+
+        return user
     }
 
 }
