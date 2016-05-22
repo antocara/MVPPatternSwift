@@ -11,7 +11,7 @@ import Foundation
 class RegisterUseCase{
 
     /**
-     Execute login process in server
+     Execute register process in server
      */
     func executeRegister(user: User, callback: CallbackLogin){
         DataRepository().signUpUser(user, callback: callback);

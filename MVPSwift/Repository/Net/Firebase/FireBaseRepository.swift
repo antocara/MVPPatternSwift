@@ -32,7 +32,10 @@ class FireBaseRepository: IFireBaseRepository {
         }
 
     }
-    
+
+    /**
+     Register user in Firebase
+     */
     func signUp(user: User, callback: CallbackLogin){
 
         FIRAuth.auth()?.createUserWithEmail(user.email, password: user.password) { (user, error) in
