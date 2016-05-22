@@ -11,13 +11,11 @@ import Foundation
 
 struct RestConfig {
 
-    static let URL_BASE = "https://login-mvp-swift.firebaseio.com/";
 
-    
     //MARK: - END POINTS -
-    static var END_POINT_SIGNIN: String {
-        return URL_BASE + "login"
-    }
+//    static var END_POINT_SIGNIN: String {
+//        return URL_BASE + "login"
+//    }
 
 
 }
