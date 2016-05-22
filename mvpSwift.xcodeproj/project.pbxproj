@@ -21,6 +21,11 @@
 		8EEAFD501CEF590B00B42848 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEAFD4F1CEF590B00B42848 /* User.swift */; };
 		8EEC7DD41CEFA75200CF5FDC /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DD31CEFA75200CF5FDC /* RestManager.swift */; };
 		8EEC7DD61CEFA7D000CF5FDC /* RestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DD51CEFA7D000CF5FDC /* RestConfig.swift */; };
+		8EEC7DD91CF05D6100CF5FDC /* FireBaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DD81CF05D6100CF5FDC /* FireBaseRepository.swift */; };
+		8EEC7DDC1CF05EC500CF5FDC /* IFireBaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DDB1CF05EC500CF5FDC /* IFireBaseRepository.swift */; };
+		8EEC7DDE1CF0618900CF5FDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC7DDD1CF0618900CF5FDC /* GoogleService-Info.plist */; };
+		8EEC7DE01CF0682200CF5FDC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEC7DDF1CF0682200CF5FDC /* Alamofire.framework */; };
+		8EEC7DE31CF1AB2600CF5FDC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DE21CF1AB2600CF5FDC /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +45,13 @@
 		8EEAFD4B1CEF430600B42848 /* DataRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
 		8EEAFD4D1CEF435900B42848 /* CallbackLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallbackLogin.swift; sourceTree = "<group>"; };
 		8EEAFD4F1CEF590B00B42848 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		8EEC7DD31CEFA75200CF5FDC /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
-		8EEC7DD51CEFA7D000CF5FDC /* RestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestConfig.swift; sourceTree = "<group>"; };
+		8EEC7DD31CEFA75200CF5FDC /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestManager.swift; path = ../../RestManager.swift; sourceTree = "<group>"; };
+		8EEC7DD51CEFA7D000CF5FDC /* RestConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestConfig.swift; path = ../../RestConfig.swift; sourceTree = "<group>"; };
+		8EEC7DD81CF05D6100CF5FDC /* FireBaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireBaseRepository.swift; sourceTree = "<group>"; };
+		8EEC7DDB1CF05EC500CF5FDC /* IFireBaseRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IFireBaseRepository.swift; sourceTree = "<group>"; };
+		8EEC7DDD1CF0618900CF5FDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "MVPSwift/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8EEC7DDF1CF0682200CF5FDC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/mvpSwift-cwzhbcqcrmgvggguedfuajruklyg/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		8EEC7DE21CF1AB2600CF5FDC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EEC7DE01CF0682200CF5FDC /* Alamofire.framework in Frameworks */,
 				4EBC6CDF87111525071BA2EC /* Pods_mvpSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +79,7 @@
 		89A926E735624F26184DA4FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EEC7DDF1CF0682200CF5FDC /* Alamofire.framework */,
 				327D7825C3E475F6359CA841 /* Pods_mvpSwift.framework */,
 			);
 			name = Frameworks;
@@ -76,6 +88,7 @@
 		8E178C791CE5AB7E00E5C240 = {
 			isa = PBXGroup;
 			children = (
+				8EEC7DDD1CF0618900CF5FDC /* GoogleService-Info.plist */,
 				8E178C841CE5AB7F00E5C240 /* MVPSwift */,
 				8E178C831CE5AB7F00E5C240 /* Products */,
 				72FAB9A84677BD60FDF302C7 /* Pods */,
@@ -109,6 +122,7 @@
 		8E178C971CE5AB8E00E5C240 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EEC7DE11CF1AB0800CF5FDC /* utils */,
 				8EEAFD511CEF5A4000B42848 /* controllers */,
 				8EEAFD441CEF414100B42848 /* presenters */,
 			);
@@ -165,10 +179,38 @@
 		8EEC7DD21CEFA72F00CF5FDC /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				8EEC7DDA1CF05E0A00CF5FDC /* Api */,
+				8EEC7DD71CF05D3D00CF5FDC /* Firebase */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
+		8EEC7DD71CF05D3D00CF5FDC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				8EEC7DD81CF05D6100CF5FDC /* FireBaseRepository.swift */,
+				8EEC7DDB1CF05EC500CF5FDC /* IFireBaseRepository.swift */,
+			);
+			name = Firebase;
+			path = Net/Firebase;
+			sourceTree = "<group>";
+		};
+		8EEC7DDA1CF05E0A00CF5FDC /* Api */ = {
+			isa = PBXGroup;
+			children = (
 				8EEC7DD31CEFA75200CF5FDC /* RestManager.swift */,
 				8EEC7DD51CEFA7D000CF5FDC /* RestConfig.swift */,
 			);
-			name = Net;
+			name = Api;
+			path = Net/Api;
+			sourceTree = "<group>";
+		};
+		8EEC7DE11CF1AB0800CF5FDC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				8EEC7DE21CF1AB2600CF5FDC /* String.swift */,
+			);
+			path = utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E178C901CE5AB7F00E5C240 /* LaunchScreen.storyboard in Resources */,
+				8EEC7DDE1CF0618900CF5FDC /* GoogleService-Info.plist in Resources */,
 				8E178C8D1CE5AB7F00E5C240 /* Assets.xcassets in Resources */,
 				8E178C8B1CE5AB7F00E5C240 /* Main.storyboard in Resources */,
 			);
@@ -294,10 +337,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EEC7DD41CEFA75200CF5FDC /* RestManager.swift in Sources */,
+				8EEC7DE31CF1AB2600CF5FDC /* String.swift in Sources */,
 				8E178C881CE5AB7F00E5C240 /* LoginController.swift in Sources */,
 				8EEAFD4A1CEF429700B42848 /* LoginUseCase.swift in Sources */,
 				8EEAFD481CEF419A00B42848 /* LoginView.swift in Sources */,
 				8E178C861CE5AB7F00E5C240 /* AppDelegate.swift in Sources */,
+				8EEC7DD91CF05D6100CF5FDC /* FireBaseRepository.swift in Sources */,
+				8EEC7DDC1CF05EC500CF5FDC /* IFireBaseRepository.swift in Sources */,
 				8EEC7DD61CEFA7D000CF5FDC /* RestConfig.swift in Sources */,
 				8EEAFD501CEF590B00B42848 /* User.swift in Sources */,
 				8EEAFD4E1CEF435900B42848 /* CallbackLogin.swift in Sources */,
@@ -418,7 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/MVPSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kibo.mvpSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antocara.mvpSwift;
 				PRODUCT_NAME = mvpSwift;
 			};
 			name = Debug;
@@ -430,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/MVPSwift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kibo.mvpSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antocara.mvpSwift;
 				PRODUCT_NAME = mvpSwift;
 			};
 			name = Release;

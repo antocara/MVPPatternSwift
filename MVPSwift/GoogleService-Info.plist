@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>96788489289-2blurvkseflturpq63cq0gd4pe180aab.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.96788489289-2blurvkseflturpq63cq0gd4pe180aab</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAfBextuNOiF0q1tYud0jwPJKTGTamwDr4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>96788489289</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.antocara.mvpSwift</string>
+	<key>PROJECT_ID</key>
+	<string>login-mvp-swift</string>
+	<key>STORAGE_BUCKET</key>
+	<string>login-mvp-swift.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:96788489289:ios:356c36e7c751823c</string>
+	<key>DATABASE_URL</key>
+	<string>https://login-mvp-swift.firebaseio.com</string>
+</dict>
+</plist>
