@@ -15,7 +15,7 @@ class LoginUseCase{
      Execute login process in server
      */
     func executeLogin(user: User, callback: CallbackLogin){
-        DataRepository().procesLogin(user, callback: callback)
+        DataRepository().signInUser(user, callback: callback);
     }
 
 }

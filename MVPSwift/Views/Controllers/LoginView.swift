@@ -15,7 +15,7 @@ protocol LoginView {
 
     func hideLoading();
 
-    func openAlertController();
+    func openAlertController(message: String);
 
     func showErrorMessage(errorMessage: String);
 }

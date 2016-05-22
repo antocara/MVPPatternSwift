@@ -3,7 +3,8 @@ use_frameworks!
 
 target "mvpSwift" do
   #Firebase
-  pod 'Firebase'
+
+  pod 'Firebase/Auth'
   #alamofire REST
   source 'https://github.com/CocoaPods/Specs.git'
   pod 'Alamofire', '~> 3.0'

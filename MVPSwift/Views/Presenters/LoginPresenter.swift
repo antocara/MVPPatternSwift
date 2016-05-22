@@ -23,7 +23,21 @@ class LoginPresenter{
 
     func actionInitLogin(user: User){
         self.nameView.showLoading();
-        self.loginUseCase.executeLogin(user, callback: self);
+        if validForm(user){
+            self.loginUseCase.executeLogin(user, callback: self);
+        }else{
+            self.onError("Invalid Email, please insert an valid email")
+        }
+    }
+
+    func validForm(user: User) -> Bool{
+        var isValid = false
+
+        if let emailForm = user.email where !emailForm.isEmpty{
+            isValid = emailForm.isValidEmail(emailForm)
+        }
+
+        return isValid
     }
 }
 
@@ -32,21 +46,21 @@ class LoginPresenter{
 extension LoginPresenter: CallbackLogin{
 
     func onResultLogin(result: LoginResult){
-        if LoginResult.SUCCESS == result{
-            self.onSuccess("");
-        }else if LoginResult.ERROR == result{
-            self.onError("");
+        if LoginStatusResult.SUCCESS == result.statusResult{
+            self.onSuccess(result.message);
+        }else if LoginStatusResult.ERROR == result.statusResult{
+            self.onError(result.message);
         }
     }
 
 
     func onSuccess(message: String){
         self.nameView.hideLoading();
-        self.nameView.openAlertController();
+        self.nameView.openAlertController(message);
     }
 
     func onError(errorMessage: String){
         self.nameView.hideLoading();
-        self.nameView.showErrorMessage("Sorry, credentials are not corrects, try again");
+        self.nameView.showErrorMessage(errorMessage);
     }
 }

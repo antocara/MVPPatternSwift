@@ -9,12 +9,22 @@
 import Foundation
 
 
-enum LoginResult{
-
+enum LoginStatusResult{
     case SUCCESS
     case ERROR
 }
 
+struct LoginResult {
+    
+    var statusResult: LoginStatusResult
+    var message: String
+
+
+    init(status: LoginStatusResult, message: String){
+        self.statusResult = status
+        self.message = message
+    }
+}
 
 
 protocol CallbackLogin {
