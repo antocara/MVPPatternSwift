@@ -11,12 +11,15 @@ import Foundation
 
 class User: NSObject {
 
-    var email: String?
-    var password: String?
+    var email: String
+    var password: String
 
+    override init() {
+        self.email = ""
+        self.password = ""
+    }
 
     init(email: String, password: String) {
-        super.init()
         self.email = email;
         self.password = password;
     }

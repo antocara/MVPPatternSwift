@@ -19,7 +19,7 @@ class FireBaseRepository: IFireBaseRepository {
      */
     func signIn(user: User, callback: CallbackLogin){
 
-        FIRAuth.auth()?.signInWithEmail(user.email!, password: user.password!) { (user, error) in
+        FIRAuth.auth()?.signInWithEmail(user.email, password: user.password) { (user, error) in
 
             if let error = error {
                 let errorMessage = self.managedError(error);
@@ -35,6 +35,16 @@ class FireBaseRepository: IFireBaseRepository {
     
     func signUp(user: User, callback: CallbackLogin){
 
+        FIRAuth.auth()?.createUserWithEmail(user.email, password: user.password) { (user, error) in
+            if let error = error{
+                let errorMessage = self.managedError(error);
+                callback.onResultLogin(
+                    LoginResult(status: LoginStatusResult.ERROR, message: errorMessage))
+            }else{
+                callback.onResultLogin(
+                    LoginResult(status: LoginStatusResult.SUCCESS, message: "Success, user created"))
+            }
+        }
     }
 
     /**
