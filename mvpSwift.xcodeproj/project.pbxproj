@@ -26,6 +26,7 @@
 		8EEC7DDE1CF0618900CF5FDC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC7DDD1CF0618900CF5FDC /* GoogleService-Info.plist */; };
 		8EEC7DE01CF0682200CF5FDC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EEC7DDF1CF0682200CF5FDC /* Alamofire.framework */; };
 		8EEC7DE31CF1AB2600CF5FDC /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DE21CF1AB2600CF5FDC /* String.swift */; };
+		8EEC7DE51CF1AE8500CF5FDC /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC7DE41CF1AE8500CF5FDC /* RegisterUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8EEC7DDD1CF0618900CF5FDC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "MVPSwift/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8EEC7DDF1CF0682200CF5FDC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/mvpSwift-cwzhbcqcrmgvggguedfuajruklyg/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		8EEC7DE21CF1AB2600CF5FDC /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8EEC7DE41CF1AE8500CF5FDC /* RegisterUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				8EEAFD491CEF429700B42848 /* LoginUseCase.swift */,
 				8EEAFD4D1CEF435900B42848 /* CallbackLogin.swift */,
+				8EEC7DE41CF1AE8500CF5FDC /* RegisterUseCase.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 			files = (
 				8EEC7DD41CEFA75200CF5FDC /* RestManager.swift in Sources */,
 				8EEC7DE31CF1AB2600CF5FDC /* String.swift in Sources */,
+				8EEC7DE51CF1AE8500CF5FDC /* RegisterUseCase.swift in Sources */,
 				8E178C881CE5AB7F00E5C240 /* LoginController.swift in Sources */,
 				8EEAFD4A1CEF429700B42848 /* LoginUseCase.swift in Sources */,
 				8EEAFD481CEF419A00B42848 /* LoginView.swift in Sources */,
