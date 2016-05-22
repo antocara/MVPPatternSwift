@@ -19,7 +19,7 @@ class LoginController: UIViewController {
 
     @IBAction func actionButtonLogin(sender: AnyObject) {
         if let name = self.editName.text, let pass = self.editPass.text{
-            LoginPresenter(nameView: self).actionInitLogin(User(name: name, password: pass))
+            LoginPresenter(nameView: self).actionInitLogin(User(email: name, password: pass))
         }
     }
 
@@ -44,10 +44,10 @@ extension LoginController: LoginView{
         self.loading.hidden = true;
     }
 
-    func openAlertController() {
+    func openAlertController(message: String) {
         self.cleanForm();
 
-        self.createAlertController();
+        self.createAlertController(message);
     }
 
     func cleanForm(){
@@ -60,7 +60,7 @@ extension LoginController: LoginView{
         self.labelError.text = errorMessage;
     }
 
-    func createAlertController(){
+    func createAlertController(message: String){
         let alertView = UIAlertController(title: "Congratulations", message: "Your credentials are corrects", preferredStyle: .Alert)
         alertView.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
         presentViewController(alertView, animated: true, completion: nil)

@@ -11,13 +11,13 @@ import Foundation
 
 class User: NSObject {
 
-    var name: String?
+    var email: String?
     var password: String?
 
 
-    init(name: String, password: String) {
+    init(email: String, password: String) {
         super.init()
-        self.name = name;
+        self.email = email;
         self.password = password;
     }
 }
