@@ -1,5 +1,20 @@
-# Model View Presenter pattern with Swift
-Basic Swift Model View Presenter Pattern iOS Application. Basic application with an example of MVP pattern with Swift language executing a login process.
+# Basic sample application for a Login/Register with FireBase and Swift
+
+For this example it has been used an approach to pattern Model View Presenter (or what I mean by this). The example is complete and can run on any emulator or device only downloading and compiling code.
+CocoaPods has been used for dependencies (included in the repo)
+
+The example uses a test account opened in FireBase, if you want to use your own just have to generate the GoogleService-Info.plist file from the FireBase console and replace the file that exists in the home directory of this example.
+
+All feedback is welcome.
+
+To do:
+
+Add example login with:
+* Google
+* Facebook
+* Github
+* Twitter
+* Firebase
 
 
 License
