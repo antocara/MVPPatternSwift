@@ -13,11 +13,13 @@ class LoginPresenter{
 
     var nameView: LoginView;
     var loginUseCase: LoginUseCase;
+    var registerUseCase: RegisterUseCase;
 
 
     init(nameView: LoginView){
-        self.nameView = nameView;
-        self.loginUseCase = LoginUseCase();
+        self.nameView = nameView
+        self.loginUseCase = LoginUseCase()
+        self.registerUseCase = RegisterUseCase()
     }
 
 
@@ -30,11 +32,21 @@ class LoginPresenter{
         }
     }
 
+
+    func actionInitRegister(user: User){
+        self.nameView.showLoading();
+        if validForm(user){
+            self.registerUseCase.executeRegister(user, callback: self)
+        }else{
+            self.onError("Invalid Email, please insert an valid email")
+        }
+    }
+
     func validForm(user: User) -> Bool{
         var isValid = false
 
-        if let emailForm = user.email where !emailForm.isEmpty{
-            isValid = emailForm.isValidEmail(emailForm)
+        if !user.email.isEmpty{
+            isValid = user.email.isValidEmail(user.email)
         }
 
         return isValid
